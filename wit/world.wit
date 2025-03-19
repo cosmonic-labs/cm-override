@@ -1,0 +1,17 @@
+package example:http-server;
+
+interface encoding {
+  record test-record {
+    string-value: option<string>,
+    int-value: option<s32>,
+    bool-value: option<bool>,
+    list-value: option<list<string>>
+  }
+
+}
+
+world example {
+  include wasmcloud:component-go/imports@0.1.0;
+  export wasi:http/incoming-handler@0.2.0;
+  import encoding;
+}
