@@ -3,6 +3,7 @@ package cm
 import (
 	"bytes"
 	"encoding/json"
+	_ "unsafe"
 )
 
 var nullJSON = []byte("null")
