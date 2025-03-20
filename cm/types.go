@@ -1,6 +1,10 @@
 package cm
 
-import bcm "go.bytecodealliance.org/cm"
+import (
+	_ "unsafe"
+
+	bcm "go.bytecodealliance.org/cm"
+)
 
 // Aliases types
 type (
