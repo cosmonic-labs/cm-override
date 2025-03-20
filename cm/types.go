@@ -1,6 +1,7 @@
 package cm
 
 import (
+	"structs"
 	_ "unsafe"
 
 	bcm "go.bytecodealliance.org/cm"
@@ -14,7 +15,7 @@ type (
 	AnyVariant[Tag Discriminant, Shape, Align any]                                    bcm.AnyVariant[Tag, Shape, Align]
 	BoolResult                                                                        bcm.BoolResult
 	Discriminant                                                                      bcm.Discriminant
-	HostLayout                                                                        bcm.HostLayout
+	HostLayout                                                                        structs.HostLayout
 	List[T any]                                                                       bcm.List[T]
 	Rep                                                                               bcm.Rep
 	Resource                                                                          bcm.Resource
